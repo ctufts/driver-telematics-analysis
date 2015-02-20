@@ -1,2 +1,20 @@
 # driver-telematics-analysis
-This repository contains the files used in the analysis of the driver telematics analysis challenge
+This repository contains the files used in the analysis of the driver telematics analysis challenge.  
+
+Files used for clustering:
+kaggleSubmission1.R - kmeans trip/stop data
+kaggleSubmission2.R - hclust trip/stop data
+prediction\_histogram_heirarchal.R - hclust hist data
+prediction\_histogram_kmeans.R - kmeans hist data
+
+
+Files used for summarising and transforming:
+distanceCharacteristics.R
+distanceHistogram.R
+stopCharacteristics.R
+
+Summarised data:
+driverHistogramDistance20150219.csv - histograms of distance between samples
+driverStopStats20150219.csv - summary of number of stops, trip length, unique stops
+driverTripStats20150219.csv - summary statistics of distances between samples
+
