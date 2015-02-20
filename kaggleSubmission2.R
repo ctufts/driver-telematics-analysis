@@ -2,6 +2,7 @@ rm(list = ls())
 library(dplyr)
 library(stringr)
 
+#clusters using kmeans
 get.clusters <- function(x){
   
   set.seed(7)
@@ -25,6 +26,8 @@ get.clusters <- function(x){
     return(final.result)
   }
 }
+
+# cluster using hierarchal cluster
 get.hier.clusters <- function(x){
   
   set.seed(7)
@@ -51,7 +54,7 @@ get.hier.clusters <- function(x){
 }
 
 # read in processed data for driver trips and stops
-test.data.stops <- read.csv("driverStopStats_20150219.csv")
+test.data.stops <- read.csv("driverStopStats20150219.csv")
 test.data.distance  <- read.csv("driverTripStats20150219.csv")
 test.data <- merge(test.data.stops[,-1 ], test.data.distance[,-1], by = c("id", "file.name"))
 rm(test.data.stops)

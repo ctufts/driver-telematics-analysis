@@ -27,8 +27,8 @@ get.clusters <- function(x){
   }
 }
 
-sample.sub <- read.csv("sampleSubmission.csv")
-test.data.stops <- read.csv("driverStopStats_copy_20150219.csv")
+#read in processed data
+test.data.stops <- read.csv("driverStopStats20150219.csv")
 test.data.distance  <- read.csv("driverTripStats20150219.csv")
 
 test.data <- merge(test.data.stops[,-1 ], test.data.distance[,-1], by = c("id", "file.name"))
@@ -71,5 +71,5 @@ summary(factor(final.result$prediction))
 driver_trip <- paste0(final.result$id, "_", final.result$fout)
 #write results to file
 write.csv(data.frame(driver_trip, prob = final.result$prediction),
-          file = "DriverTelemetrics/submission_20150219_1.csv",
+          file = "submission_20150219_1.csv",
           row.names = F)
