@@ -2,10 +2,10 @@
 This repository contains the files used in the analysis of the driver telematics analysis challenge.  
 
 Files used for clustering:
-kaggleSubmission1.R - kmeans trip/stop data
-kaggleSubmission2.R - hclust trip/stop data
-prediction\_histogram_heirarchal.R - hclust hist data
-prediction\_histogram_kmeans.R - kmeans hist data
+kaggleSubmission1.R - kmeans trip/stop data - score: 0.51133
+kaggleSubmission2.R - hclust trip/stop data - score: 0.52460
+prediction\_histogram_heirarchal.R - hclust hist data - score:0.50924
+prediction\_histogram_kmeans.R - kmeans hist data - score:0.48321
 
 
 Files used for summarising and transforming:
